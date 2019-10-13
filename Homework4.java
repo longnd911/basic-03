@@ -28,13 +28,13 @@ public class Homework4 {
         boolean check = check(a);
         System.out.println(check);
 
-        char[] c = a.toCharArray();
-
-        char[] kq = sap_xep(c);
-        System.out.println("Ket qua sau khi sap xep lai cac ki tu: ");
-        for (int i = 0; i < c.length; i++) {
-            System.out.print(kq[i] + " ");
-        }
+//        char[] c = a.toCharArray();
+//
+//        char[] kq = sap_xep(c);
+//        System.out.println("Ket qua sau khi sap xep lai cac ki tu: ");
+//        for (int i = 0; i < c.length; i++) {
+//            System.out.print(kq[i] + " ");
+//        }
     }
 
     public static boolean check(int[] a) {
@@ -46,7 +46,7 @@ public class Homework4 {
         }
         return true;
     }
-    
+
     public static boolean check(int a) {
         int count = 0;
         if (a == 0 || a == 1) {
@@ -61,8 +61,8 @@ public class Homework4 {
             return true;
         }
         return false;
-}
-    
+    }
+
     public static char[] sap_xep(char[] c) {
         for (int i = 0; i < c.length - 1; i++) {
             for (int j = i + 1; j < c.length; j++) {
