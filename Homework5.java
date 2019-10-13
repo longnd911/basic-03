@@ -32,14 +32,14 @@ public class Homework5 {
             String baso2 = t.substring(0, X - 3);
             String SoTien = baso2 + "," + baso1 + "vnd";
             System.out.println(SoTien);
-            
+
         } else if (X > 6 && X <= 9) {
             String baso1 = t.substring(X - 3, X);
             String baso2 = t.substring(X - 6, X - 3);
             String baso3 = t.substring(0, X - 6);
             String SoTien = baso3 + "," + baso2 + "," + baso1 + "vnd";
             System.out.println(SoTien);
-            
+
         } else if (X > 9 && X <= 12) {
             String baso1 = t.substring(X - 3, X);
             String baso2 = t.substring(X - 6, X - 3);
@@ -60,16 +60,4 @@ public class Homework5 {
         }
         return false;
     }
-    
-    String s = "233-1525";
-        System.out.println(s);
-        
-        int c = s.indexOf("-");
-        String so1 = s.substring(0, c);
-        String so2 = s.substring(c + 1);
-        
-        int a = Integer.valueOf(so1);
-        int b = Integer.valueOf(so2);
-        
-        System.out.println("Ket qua la:" + (a - b));
 }
